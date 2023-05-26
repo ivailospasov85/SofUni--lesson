@@ -1,0 +1,5 @@
+let print = this.print || console.log;
+
+let input = gets;
+let output=(`Hello, ${gets}!`)
+print(output);
