@@ -1,0 +1,25 @@
+function specialNumbers(input) {
+    let n = Number(input[0]);
+    let result = '';
+
+    for (let num = 1111; num <= 9999; num++) {
+        let numAsString = String(num);
+        let isSpecial = true;
+
+        for (let i = 0; i < numAsString.    length; i++) {
+            let digit = Number(numAsString[i]);
+
+            if (n % digit !== 0) {
+                isSpecial = false;
+                break;
+            }
+        }
+
+        if (isSpecial) {
+            result += num + ' ';
+        }
+    }console.log(result);
+}
+    
+
+    specialNumbers(["16"])

@@ -1,0 +1,14 @@
+function projectCreations(input) {
+ let name = input[0];
+ let hours = Number (input[1]);
+ let result = hours*3;
+ let project = Number (input[1]);
+console.table
+
+
+console.log(`The architect ${name} will need ${result} hours to complete ${hours} project/s.`);
+
+}
+
+
+projectCreations(['Sanya','9']);
